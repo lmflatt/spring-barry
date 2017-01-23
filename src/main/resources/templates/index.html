@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Add Person:
+<br/>
+<form action="/add" method="post">
+    <input name="name" type="text" placeholder="name" />
+    <input name="age" type="number" />
+    <button type="submit">Submit</button><br/>
+    {{#peopleList}}
+        My name is {{name}}<br/>
+        I am {{age}} years old <br/><br/>
+    {{/peopleList}}
+</form>
+</body>
+</html>
